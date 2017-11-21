@@ -1,0 +1,9 @@
+A few Tips 
+•	--target-dir will not work with import-all-tables command – use --warehouse-dir
+•	--split-by or -m 1 [mapper] are required if the primary key is not defined in the table imported.
+•	--query does not work with --table, --where, --columns clause 
+•	order of the statement matters (if you give –as-avrodatafile before –target-dir you will get an error)
+•	$CONDITIONS is used to get metadata and get min max values.  
+•	Default delimiters in sqoop “,”
+•	Default file is stored as text file 
+
